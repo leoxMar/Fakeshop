@@ -1,0 +1,16 @@
+2021-12-16T13:27:35+00:00 CRITICAL Uncaught Error: Call to undefined function wc_print_notices() in C:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\auth\form-grant-access.php:30
+Stack trace:
+#0 C:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\class-wc-auth.php(370): wc_get_template('auth/form-grant...', Array)
+#2 C:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\class-wc-auth.php(303): WC_Auth->auth_endpoint('authorize')
+#3 C:\laragon\www\wordpress\wp-includes\class-wp-hook.php(303): WC_Auth->handle_auth_requests(Object(WP))
+#4 C:\laragon\www\wordpress\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#5 C:\laragon\www\wordpress\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#6 C:\laragon\www\wordpress\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#7 C:\laragon\www\wordpress\wp-includes\class-wp.php(750): WP->parse_request('')
+#8 C:\laragon\www\wordpress\wp-includes\functions.php(1291): WP->main('')
+#9 C:\laragon\www\wordpress\wp-blog-header.php(16): wp()
+#10 C:\laragon\www\wordpress\index.php(17): require('C:\\laragon\\www\\...')
+#11 {main}
+  thrown in C:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\auth\form-grant-access.php alla riga 30
+
